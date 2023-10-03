@@ -8,8 +8,8 @@
 :root {
     --font-padrao: 'Poppins', sans-serif;
     --font01: 'Lato', sans-serif;
-    --cor01: #F0C335;
-    --cor05: #c3ae3a;
+    --cor01: #FD9619;
+    --cor05: #E36917;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to left, #161515, #c3ae3a);
+    background: linear-gradient(to left, --cor01);
     color: black;
     font-size: 1.8em;
     text-transform: uppercase;
@@ -66,7 +66,7 @@ h2 {
 .menu-button::before,
 .menu-button::after {
     display: block;
-    background-color: #c3ae3a;
+    background-color: var(--cor05);
     position: absolute;
     height: 4px;
     width: 30px;
@@ -102,7 +102,7 @@ li {
     list-style: none;
     text-transform: uppercase;
     text-align: center;
-    color: #c3ae3a;
+    color: #FD9619;
     font-size: 18px;
 }
 
@@ -112,13 +112,17 @@ nav a {
 
 a {
     text-decoration: none;
-    color: #c3ae3a;
+    color: #FD9619;
 }
 
 a:hover {
-    background-color: #c3ae3a;
+    background-color: #FD9619;
     color: black;
     border-radius: 4px;
+}
+
+h3 {
+    color: var(--cor05);
 }
 
 #footer-flex {
