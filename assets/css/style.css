@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&family=Poppins:wght@100;200;300&family=Shadows+Into+Light&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-padrao: 'Poppins', sans-serif;
+    --font01: 'Lato', sans-serif;
+    --cor01: #F0C335;
+    --cor05: #c3ae3a;
+}
+
+body {
+    font-family: var(--font01);
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, #161515, #c3ae3a);
+    color: black;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 1em;
+}
+
+
+h2 {
+    vertical-align: center;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #c3ae3a;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c3ae3a;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #c3ae3a;
+}
+
+a:hover {
+    background-color: #c3ae3a;
+    color: black;
+    border-radius: 4px;
+}
+
+#footer-flex {
+    display: flex;
+    background-color: #00080A;
+    flex-wrap: wrap;
+}
