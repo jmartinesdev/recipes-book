@@ -260,3 +260,15 @@ form {
         border-bottom: 1px solid #444;
     }
 }
+
+function Login(){
+
+    var login = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    if(login == 'admin' && password == 'admin'){
+        alert('Sucess');
+    }else{
+        alert('User incorret');
+    }
+}
