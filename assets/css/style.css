@@ -159,7 +159,7 @@ a:hover {
 
 h3 {
     text-align: center;
-    color: #fff;
+    color: #E36917;
     margin: 30px;
 }
 
@@ -293,7 +293,6 @@ a.btn.btn-primary {
 }
 
 .nav-button {
-    background-color: #fff;
     color:#ee8c14;
     padding: 10px 10px;
     text-decoration: none;
@@ -336,6 +335,58 @@ span.difficulty,
 span.servings {
     font-size: 1rem;
     color: #ee8c14;
+}
+
+.ingredients {
+    float: left;
+    width: 50%;
+    height: 80vh;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.ingredients ul li {
+    padding: 10px;
+    font-family: var(--font-padrao);
+}
+
+.recipe-instruction {
+    color: #fff;
+    padding: 20px;
+}
+
+.recipe-ingredients {
+    padding: 20px;
+}
+
+.recipe-prepare {
+    float: right;
+    width: 50%;
+    height: 80vh;
+    background-color: #ee8c14;
+    font-family: var(--font-padrao);
+}
+
+.recipe-prepare ul li label {
+    display: flex;
+    align-items: center;
+}
+
+label {
+    padding: 15px;
+    margin: 5px ;
+    text-align: justify;
+}
+
+input {
+    border: 1px solid #fff;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    appearance: none;
+    margin: 0 0.5rem 0 0;
+    position: relative;
+    flex: 0 0 1.25rem;
 }
 
 @media (max-width: 700px) {
