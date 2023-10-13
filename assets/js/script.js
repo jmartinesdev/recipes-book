@@ -10,24 +10,19 @@ form.addEventListener('submit', (event) => {
         return;
     }
 
-    if(validatePassword(passwordInput.value)) {
-        alert('The password must be at least 8 characters.')
-    }
-
     if(passwordInput.value === '') {
         alert('Please, password field is empty.')
         return;
     }
 
-function validatePassword(password, minLength) {
-    if(password.length >= minLength){
-        return True
+    if(!validatePassword(passwordInput.value, 8)) {
+        alert('The password must be at least 8 characters.')
+        return;
     }
-
-    else{
-        return False
-    }
-}    
 
     form.submit();
 });
+
+function validatePassword(password, minDig) {
+    return password.length >= minDig;
+}
