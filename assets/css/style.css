@@ -259,6 +259,85 @@ a.btn.btn-primary {
     margin: 10px;
 }
 
+.page-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-details-cooking {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.nav-button {
+    background-color: #fff;
+    color:#ee8c14;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #E36917;
+}
+
+.description {
+    font-size: 20px;
+    color: #444;
+    margin-top: 60px;
+}
+
+.recipe-icons {
+    grid-row: 3;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipe-icons i {
+    margin-right: 6px;
+    margin: 50px;
+}
+
+i.fa-regular.fa-clock,
+i.fa-solid.fa-bowl-rice,
+i.fa-solid.fa-person {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+span.time,
+span.difficulty,
+span.servings {
+    font-size: 1rem;
+    color: #ee8c14;
+}
+
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
