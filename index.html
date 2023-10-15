@@ -25,14 +25,14 @@
         </label>
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#container">Recipes</a></li>
+            <li><a href="recipe.html">Recipes</a></li>
             <li><a href="#about-us">My Recipes</a></li>
             <li><a href="#footer-flex">Add Recipe</a></li>
             <li><a href="#login">Login</a></li>
         </ul>
     </section>
     <hr>
-    <section>
+    <section class="login-container">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -41,43 +41,80 @@
             </div>
         </div>
         <div id="title">
-            <form class="form-horizontal">
+            <div class="form-horizontal">
                 <div class="form-group">
                     <h2>
                         Create a new recipe
                         <br> and share!
                     </h2>
                     <h3>Create, edit and deleted your recipe.</h3>
-                    <div id="login">
-                        <form class="card">
-                            <div class="card-header">
+                    <form class="card">
+                        <div class="card-header">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-content-area">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" autocomplete="off">
                             </div>
-                            <div class="card-content">
-                                <div class="card-content-area">
-                                    <label for="email">E-mail</label>
-                                    <input type="text" id="email" autocomplete="off">
-                                </div>
-                                <div class="card-content-area">
-                                    <label for="password">Password</label>
-                                    <input type="password" id="password" autocomplete="off">
-                                </div>
+                            <div class="card-content-area">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" autocomplete="off">
                                 <div class="card-footer">
                                     <button type="submit" class="btn-primary" onclick="Login()">Login<button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-    </section>
-    <section class="hero">
-        <div class="card">
-            <img class="card-img-top" src="/assets/images/quinoa-salad.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Quinoa Salad Recipe</h5>
-              <p class="card-text">"Learn how to make a delicious and healthy quinoa salad for summer days."</p>
-              <a href="#" class="btn btn-primary">Go to recipe</a>
+                                </div>                                
+                            </div> 
+                        </div>    
+                    </form>           
+                </div>
             </div>
-          </div>
+        </div>
     </section>
+    <div class="hero-container">
+        <section class="hero">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/quinoa-salad.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Quinoa Salad Recipe</h5>
+                    <p class="card-text">"Learn how to make a delicious and healthy quinoa salad for summer days. Enjoy
+                        this amazing recipe."</p>
+                    <a href="recipe.html" class="btn btn-primary">Go to recipe</a>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/coxinha.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Brazilian Snack - Coxinha</h5>
+                    <p class="card-text">"Coxinha is a popular street food snack in Brazil and is fun and economical to
+                        make. You can eat anytime."</p>
+                    <a href="recipe.html" class="btn btn-primary">Go to recipe</a>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/spaghetti-carbonara.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Spaghetti Carbonara</h5>
+                    <p class="card-text">"Discover how to make a spaghetti carbonara. This cheesy pasta dish is an
+                        Italian favourite food."</p>
+                    <a href="recipe.html" class="btn btn-primary">Go to recipe</a>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="card">
+                <img class="card-img-top" src="/assets/images/feijoada.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Brazilian Feijoada</h5>
+                    <p class="card-text">"Brazilian feijoada is a black bean and poek stew that brazilian often serve
+                        topped with farofa, toasted cassava flour."</p>
+                    <a href="recipe.html" class="btn btn-primary">Go to recipe</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script type="text/javascript" src="./assets/js/script.js"></script>
 </body>
