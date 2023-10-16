@@ -26,3 +26,13 @@ form.addEventListener('submit', (event) => {
 function validatePassword(password, minDig) {
     return password.length >= minDig;
 }
+
+// function to edit the recipe
+
+function Edit() {
+    const nameRecipeInput = document.getElementById('quinoa-recipe')
+    const ingredientsInput = document.getElementById('ingredients-recipe')
+    const instructionInput = document.getElementById('instruction-prepare')
+    const timePrepareInput = document.getElementById('')
+
+}
